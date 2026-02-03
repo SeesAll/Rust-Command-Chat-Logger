@@ -1,2 +1,38 @@
 # Rust-Command-Chat-Logger
 Rust uMod/Oxide plugin that logs player chat /commands to a data file with filters, staff-only mode, and automatic wipe cleanup.
+
+It supports:
+
+- Logging **only players**, **only staff**, or **everyone**
+- Ignoring spammy/irrelevant commands (e.g. `/mymini`)
+- Automatically wiping the log file on server wipes
+- Low performance impact and simple configuration
+
+---
+
+## Features
+
+- ✅ Logs any chat message starting with `/` (e.g. `/vanish`, `/tpm`, `/kit`)
+- ✅ Flexible log mode:
+  - `PlayersOnly` – only non-admin players
+  - `AdminsOnly` – only staff (OwnerID / ModeratorID in `users.cfg`)
+  - `Everyone` – both players and staff
+- ✅ Configurable **ignored commands** so spammy commands don’t clutter logs
+- ✅ Option to **wipe logs automatically** on server wipe (`OnNewSave`)
+- ✅ Stores logs in a structured JSON data file under `oxide/data`
+- ✅ Designed to be safe and very low overhead
+
+---
+
+## Requirements
+
+- Rust server using uMod/Oxide
+- .cs plugin support (standard for Oxide/uMod)
+
+---
+
+## Installation
+
+1. Download or copy `CommandChatLogger.cs`.
+2. Place the file in your server’s: oxide/plugins/
+
