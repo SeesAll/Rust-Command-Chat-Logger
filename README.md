@@ -36,3 +36,12 @@ It supports:
 1. Download or copy `CommandChatLogger.cs`.
 2. Place the file in your server’s: oxide/plugins/
 
+## Reload the plugin via console or RCON
+Type oxide.reload CommandChatLogger
+
+## The configuration file will be generated at:
+oxide/config/CommandChatLogger.json
+
+## The data file (logs) will be stored at:
+oxide/data/CommandChatLogger.json
+
