@@ -45,3 +45,12 @@ oxide/config/CommandChatLogger.json
 ## The data file (logs) will be stored at:
 oxide/data/CommandChatLogger.json
 
+## Performance Considerations
+Hooks into OnPlayerChat, which is common and lightweight.
+- Only processes messages starting with /.
+- Ignores non-players, console, and bots.
+- Command logging involves:
+  - A few string operations and list lookups.
+  - Writing the data list back to a JSON data file.
+- The plugin is designed to be very low overhead for typical server use.
+- Log data can be automatically wiped each server wipe to prevent unbounded growth.
