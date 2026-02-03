@@ -1,0 +1,10 @@
+{
+  "Plugin Enabled": true,
+  "Log Mode (PlayersOnly/AdminsOnly/Everyone)": "PlayersOnly",
+  "Wipe Data File On Server Wipe": true,
+  "Ignored Commands (without /)": [
+    "mymini",
+    "nomini",
+    "fmini"
+  ]
+}
