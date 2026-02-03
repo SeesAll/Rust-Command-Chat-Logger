@@ -1,3 +1,5 @@
+## This is what your configuration file will look like, it will be auto created on plugin load/compile.
+
 {
   "Plugin Enabled": true,
   "Log Mode (PlayersOnly/AdminsOnly/Everyone)": "PlayersOnly",
